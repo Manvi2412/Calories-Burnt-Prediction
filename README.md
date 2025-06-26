@@ -34,8 +34,6 @@ Given a dataset containing features like age, gender, height, weight, exercise d
 ## How to Run the Project
 
 ### 1. Clone the Repository
-
-```bash
 git clone https://github.com/your-username/calories-burnt-prediction.git
 cd calories-burnt-prediction
 
@@ -46,8 +44,7 @@ pip install -r requirements.txt
 Run the App
 streamlit run app.py
 
-
- Files Overview
+Files Overview
 app.py: Streamlit app for user interaction
 
 calorie_model.pkl: Trained XGBoost model
@@ -60,9 +57,10 @@ notebook.ipynb: Development notebook (optional)
 
 README.md: Project documentation
 
- Future Improvements
+Future Improvements
 Deploy with Docker or on a cloud platform
 
 Add user authentication to app
 
 Enable data logging and visualization of trends
+
