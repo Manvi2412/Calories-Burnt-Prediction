@@ -40,27 +40,22 @@ cd calories-burnt-prediction
 Install Dependencies
 pip install -r requirements.txt
 
-
 Run the App
 streamlit run app.py
 
-Files Overview
+
+
+### Files Overview
 app.py: Streamlit app for user interaction
-
 calorie_model.pkl: Trained XGBoost model
-
 calories.csv, exercise.csv: Input datasets
-
 requirements.txt: Project dependencies
-
 notebook.ipynb: Development notebook (optional)
-
 README.md: Project documentation
 
-Future Improvements
+
+### Future Improvements
 Deploy with Docker or on a cloud platform
-
 Add user authentication to app
-
 Enable data logging and visualization of trends
 
