@@ -1,28 +1,68 @@
-# 🔥 Calories Burnt Prediction using Machine Learning
+# Calories Burnt Prediction using Machine Learning
 
-This project uses machine learning to predict the number of calories burnt during physical activity based on personal and exercise-related inputs.
+This project predicts the number of calories burnt based on exercise and physiological data using regression models. It includes data preprocessing, feature engineering, model training, evaluation, and deployment using a Streamlit web app.
 
-## 📊 Project Overview
+## Problem Statement
 
-- Built a regression model to estimate calories burned using features such as age, gender, height, weight, and duration of exercise.
-- Applied data preprocessing, feature scaling, and exploratory data analysis (EDA) to prepare the dataset.
-- Evaluated and compared the performance of multiple regression models.
+Given a dataset containing features like age, gender, height, weight, exercise duration, heart rate, and body temperature, the goal is to build a regression model that can predict the number of calories burnt during exercise.
 
-## 🛠️ Tools & Technologies
+---
 
-- **Language**: Python  
-- **Libraries**: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn  
-- **Environment**: Jupyter Notebook / VS Code
+## Features
 
-## ⚙️ Models Used
+- Exploratory Data Analysis (EDA)
+- Feature Engineering (BMI, Age Groups)
+- Model Training:
+  - Linear Regression
+  - Random Forest Regressor
+  - XGBoost Regressor
+  - Gradient Boosting Regressor
+- Model Evaluation using MAE, RMSE, R² Score
+- Feature Importance & Explainability using SHAP
+- Interactive Web App using Streamlit
+- Deployed on Streamlit Cloud
 
-- Linear Regression  
-- Ridge & Lasso Regression  
-- Random Forest Regressor  
-- Model evaluation using R² Score and Mean Absolute Error (MAE)
+---
 
-## 📈 Key Insights
+## Dataset
 
-- Strong positive correlation between duration and calories burned.  
-- Gender and weight also significantly affect calorie output.  
-- Random Forest showed the highest prediction accuracy.
+- `calories.csv`: Contains `User_ID` and `Calories`
+- `exercise.csv`: Contains `User_ID` and features like Age, Gender, Height, Weight, Duration, Heart Rate, Body Temp
+
+---
+
+## How to Run the Project
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/calories-burnt-prediction.git
+cd calories-burnt-prediction
+
+Install Dependencies
+pip install -r requirements.txt
+
+
+Run the App
+streamlit run app.py
+
+
+ Files Overview
+app.py: Streamlit app for user interaction
+
+calorie_model.pkl: Trained XGBoost model
+
+calories.csv, exercise.csv: Input datasets
+
+requirements.txt: Project dependencies
+
+notebook.ipynb: Development notebook (optional)
+
+README.md: Project documentation
+
+ Future Improvements
+Deploy with Docker or on a cloud platform
+
+Add user authentication to app
+
+Enable data logging and visualization of trends
